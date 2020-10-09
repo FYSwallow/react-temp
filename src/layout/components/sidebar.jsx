@@ -45,6 +45,7 @@ function SideBar(props) {
             }
         })
     }
+    
     return (
         <div className='sidebar'>
             <Menu

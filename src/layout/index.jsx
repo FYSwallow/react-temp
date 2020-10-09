@@ -1,5 +1,6 @@
-import React, { useEffect, useContext } from 'react'
+import React, {useEffect, useContext } from 'react'
 import { AppMain, NavHeader, SideBar } from './components/index'
+import RightPanel from '../components/rightPanel/index'
 import { AppInfo, UPDATE_SCREEN, CLOSE_SIDEBAR } from '../store/index'
 
 const { body } = document
@@ -53,6 +54,7 @@ function BaseLayout(props) {
                     </div>
                     <AppMain />
                 </div>
+                <RightPanel/>
             </div>
         </div>
     );
