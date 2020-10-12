@@ -3,10 +3,12 @@ import {
     PieChartOutlined,
     MailOutlined,
     TableOutlined,
-    AppstoreOutlined
+    AppstoreOutlined,
+    DragOutlined
 } from '@ant-design/icons'
 
 import Dashboard from '../views/dashboard/index'
+import Drag from '../views/drag/index'
 import Charts from '../views/charts/index'
 import Semantic from '../views/charts/index'
 import Table from '../views/charts/index'
@@ -14,6 +16,12 @@ import AppConfig from '../views/app/config'
 import AppSpecial from '../views/app/special'
 
 const menuList = [
+    {
+        title: '拖拽', 
+        key: '/drag', 
+        icon:DragOutlined, 
+        component: Drag, 
+    },
     {
         title: 'App配置管理', 
         key: '/app', 
