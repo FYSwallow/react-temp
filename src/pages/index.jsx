@@ -9,7 +9,6 @@ export default function BasicLayout(props) {
   return (
     <div className="edit-warp">
       <DndProvider backend={HTML5Backend}>
-        123
         <Container {...props} />
       </DndProvider>
     </div>

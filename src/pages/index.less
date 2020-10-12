@@ -1,7 +1,24 @@
+.edit-warp {
+  height: 100vh;
+  width: 100vw;
+  .edit-container {
+    display: flex;
+    .edit-left {
+      width: 350px;
+      background-color: #f2f2f2;
+      transition: width 0.28s ease;
 
-.normal {
-}
-
-.title {
-  background: rgb(121, 242, 157);
+      &.collapse {
+        width: 50px;
+      }
+      .collpase-box {
+        width: 50px;
+        cursor: pointer;
+      }
+    }
+    .edit-middle {
+    }
+    .edit-right {
+    }
+  }
 }
