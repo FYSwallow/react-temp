@@ -1,6 +1,6 @@
 import React, { createContext } from 'react';
 import styles from './index.less';
-
+import 'normalize.css';
 // 设置全局变量
 export const dooringContext = createContext({
   theme: 'h5',

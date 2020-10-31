@@ -1,8 +1,13 @@
 .edit-warp {
   height: 100vh;
   width: 100vw;
+  .edit-header {
+    height: 50px;
+  }
   .edit-container {
     display: flex;
+    height: calc(100% - 50px);
+    overflow: hidden;
     .edit-left {
       width: 350px;
       background-color: #f2f2f2;
@@ -21,4 +26,11 @@
     .edit-right {
     }
   }
+}
+
+// antd样式重写
+.ant-tabs-left > .ant-tabs-nav .ant-tabs-tab {
+  margin: 0 !important;
+  padding: 0 8px 5px !important;
+  text-align: center;
 }
