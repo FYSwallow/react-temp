@@ -17,6 +17,29 @@ import AppSpecial from '../views/app/special'
 
 const menuList = [
     {
+        title: '首页', 
+        key: '/', 
+        icon: PieChartOutlined, 
+        component: Dashboard, 
+    },
+    {
+        title: 'UI组件', 
+        key: '/ui', 
+        icon: AppstoreOutlined, 
+        children: [ // 子菜单列表
+            {
+                title: '应用管理',
+                key: '/config',
+                component: AppConfig, 
+            },
+            {
+                title: '专题管理',
+                key: '/special',
+                component: AppSpecial, 
+            }
+        ]
+    },
+    {
         title: '拖拽', 
         key: '/drag', 
         icon:DragOutlined, 
@@ -45,12 +68,7 @@ const menuList = [
         icon: LineChartOutlined, 
         component: Semantic, 
     },
-    {
-        title: '首页', 
-        key: '/dashboard', 
-        icon: PieChartOutlined, 
-        component: Dashboard, 
-    },
+    
     {
         title: '图标', 
         key: '/charts', 
